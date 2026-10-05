@@ -1,15 +1,17 @@
+import { getProducts } from "../data/products";
+import ProductCard from "../components/ProductCard";
 
+export default function ProductDetails() {
+  const products = getProducts();
 
-export default function ProductDetails({ product }) {
   return (
-    <div className="product-card">
-      <div className="product-image">
-        <img src={product.image} alt={product.name} />
-      </div>
-      <div className="product-content">
-        <h2>{product.name}</h2>
-        <p>{product.description}</p>
-      </div>
+    <div className="products">
+      {products.map((product) => (
+        <ProductCard
+          key={product.id}
+          product={product}
+        />
+      ))}
     </div>
   );
 }

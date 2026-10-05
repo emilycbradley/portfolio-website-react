@@ -1,9 +1,17 @@
-
+import { getProducts } from "../data/products";
+import ProductCard from "../components/ProductCard.jsx";
 
 export default function Shop() {
+  const products = getProducts();
+
   return (
-    <div>
-      <h1>Shop/Store</h1>
+    <div className="product-grid">
+      {products.map((product) => (
+        <ProductCard
+          key={product.id}
+          product={product}
+        />
+      ))}
     </div>
   );
 }

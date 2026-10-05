@@ -1,5 +1,5 @@
 import { getProducts } from "../data/products.js";
-import ProductCard from "../componenets/ProductCard.jsx";
+import ProductCard from "../components/ProductCard.jsx";
 
 export default function Work() {
   return (

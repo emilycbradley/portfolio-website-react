@@ -5,8 +5,10 @@ export default function Home() {
     <div>
 
       <h1>Home Page</h1>
-      // crocodile image and animation
-      // home page links to about, work, and shop pages
+      
     </div>
   );
 }
+
+// crocodile image and animation
+// home page links to about, work, and shop pages
