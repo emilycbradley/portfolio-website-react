@@ -1,0 +1,13 @@
+/* Put this at the top of your main CSS file */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #111;
+  background-color: #faf5f5;
+}
