@@ -8,8 +8,7 @@ const [message, setMessage] = useState("");
   return (
     <div className="contact-container">
         <div className="contact-header">
-         <h1>Contact</h1>
-         <p>Please contact with any project ideas or inquiries.</p>
+         <h1>Say hello</h1>
         </div>
         <form 
             className="contact-form" 
@@ -41,3 +40,6 @@ const [message, setMessage] = useState("");
     </div>
   );
 }
+
+
+//sign up for newsletter, social media links, email address, phone number

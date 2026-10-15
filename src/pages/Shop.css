@@ -1,0 +1,71 @@
+/* =========================
+   SHOP PRODUCT GRID
+   ========================= */
+
+.product-grid-shop {
+  width: 90%;
+  max-width: 1400px;
+  margin: 60px auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 30px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-grid-shop .product-card {
+  width: 100%;
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-grid-shop .product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.product-grid-shop .product-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  object-fit: cover;
+}
+
+
+/* PRODUCT TEXT */
+
+.product-grid-shop .product-content {
+  padding-top: 14px;
+}
+
+.product-grid-shop .product-content h2 {
+  margin: 0 0 6px;
+
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .product-grid-shop {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 550px) {
+  .product-grid-shop {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

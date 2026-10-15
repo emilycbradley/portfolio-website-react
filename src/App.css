@@ -9,5 +9,43 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #111;
-  background-color: #faf5f5;
+  background-color: rgba(247, 248, 244, 0.9);;
 }
+
+/* BUTTON */
+
+
+button {
+  display: block;
+  margin: 0 auto;
+
+  padding: 12px 28px;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: #111;
+  background-color: #20c7b5;
+
+  border: 2px solid #111;
+  border-radius: 3px;
+
+  cursor: pointer;
+  box-shadow: 6px 6px 0 #111;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0 #111;
+}
+
+button:active {
+  transform: translate(6px, 6px);
+  box-shadow: none;
+}
+

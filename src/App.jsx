@@ -6,6 +6,8 @@ import Work from "./pages/Work.jsx";
 import Shop from "./pages/Shop.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Contact from "./pages/Contact.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
+import Checkout from "./pages/Checkout.jsx";
 
 function App() {
   
@@ -18,7 +20,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/shop/:id" element={<ProductDetails />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </div>
   )
