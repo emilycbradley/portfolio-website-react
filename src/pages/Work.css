@@ -1,0 +1,145 @@
+/* WORK PAGE */
+
+.product-grid-work {
+  width: 90%;
+  max-width: 1400px;
+  margin: 60px auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 30px;
+}
+
+
+/* PRODUCT / ARTWORK */
+
+.product-grid-work .product-card {
+  width: 100%;
+  cursor: pointer;
+}
+
+.product-grid-work .product-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.product-grid-work .product-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  transition: opacity 0.2s ease;
+}
+
+.product-grid-work .product-card:hover img {
+  opacity: 0.85;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .product-grid-work {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
+/* =========================
+   GALLERY / SLIDESHOW
+   ========================= */
+
+.gallery-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: rgba(247, 248, 244, 0.9);
+}
+
+
+/* MAIN IMAGE */
+
+.gallery-image {
+  display: block;
+
+  max-width: 85vw;
+  max-height: 85vh;
+
+  object-fit: contain;
+}
+
+
+/* CLOSE BUTTON */
+
+.gallery-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+
+  border: none;
+  background: none;
+
+  color: black;
+  font-size: 2.5rem;
+
+  cursor: pointer;
+}
+
+
+/* PREVIOUS / NEXT BUTTONS */
+
+.gallery-prev,
+.gallery-next {
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: none;
+
+  color: black;
+  font-size: 3rem;
+
+  cursor: pointer;
+}
+
+.gallery-prev {
+  left: 30px;
+}
+
+.gallery-next {
+  right: 30px;
+}
+
+
+/* MOBILE GALLERY */
+
+@media (max-width: 700px) {
+  .gallery-overlay {
+    padding: 20px;
+  }
+
+  .gallery-image {
+    max-width: 90vw;
+    max-height: 75vh;
+  }
+
+  .gallery-prev {
+    left: 10px;
+  }
+
+  .gallery-next {
+    right: 10px;
+  }
+}
